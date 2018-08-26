@@ -1,0 +1,26 @@
+#include <cstdlib> 
+#include <iostream> 
+#include<iomanip> 
+  
+using namespace std; 
+  
+int main(int argc, char *argv[]) 
+{ 
+   float x; 
+   float y; 
+   float z; 
+   float avg; 
+   cout<<"Enter 3 score(quiz, mid-term, and final) vales separated by space:"; 
+   cin>>x>>y>>z; 
+   avg=(x+y+z)/3; 
+        
+   if(avg>=90)cout<<"Grade A"; 
+   else if((avg>=70) && (avg<90)) cout<<"Grade B"; 
+   else if((avg>=50) && (avg<70))cout<<"Grade C"; 
+   else if(avg<50) cout<<"Grade F"; 
+   else cout<<"Invalid"; 
+   
+   cout<<"\n"; 
+   system("PAUSE"); 
+   return EXIT_SUCCESS; 
+}	
